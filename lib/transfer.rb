@@ -20,6 +20,19 @@ def valid?
   end
 end
 
+def execute_transacation
+  if sender.balance < @balance
+    @status = "rejected"
+  return "reject!"
+elsif 
+  @status == "Complete"
+  @sender.deposit( @amount * -1)
+  @receiver.deposit (@amount)
+  @status = "complete"
+end
+end
+  
+
 
 
 
