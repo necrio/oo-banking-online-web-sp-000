@@ -24,10 +24,10 @@ def execute_transaction
   if @sender.balance < @amount
     @status = "rejected"
   return "reject!"
-elsif
-  @status == "Complete"
+elsif  @status == "Complete"
+  puts "complete!"
 else
-  @sender.deposit( @amount - 50)
+  @sender.deposit( @amount*-1)
   @receiver.deposit (@amount)
   @status = "complete"
 end
