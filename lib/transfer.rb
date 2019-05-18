@@ -20,7 +20,7 @@ def valid?
   end
 end
 
-def execute_transacation
+def execute_transaction
   if sender.balance < @balance
     @status = "rejected"
   return "reject!"
