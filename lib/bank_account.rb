@@ -43,7 +43,7 @@ class Transfer
 attr_accessor :Transfer
 
 def initialize
-  @Transfer = transfer
+  
 end
 
 
