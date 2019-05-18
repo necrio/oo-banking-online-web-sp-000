@@ -39,5 +39,19 @@ end
 
 
 class Transfer
-  # your code here
+
+attr_accessor :Transfer
+
+def initialize(transfer)
+  @Transfer = transfer
+end
+
+
+
+
+
+
+
+
+
 end
