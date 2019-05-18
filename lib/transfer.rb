@@ -28,7 +28,7 @@ elsif  @status == "Complete"
   puts "complete!"
 else
   @sender.deposit( @amount*-1)
-  @receiver.deposit (@amount)
+  @receiver.deposit (@amount*+1)
   @status = "complete"
 end
 end
